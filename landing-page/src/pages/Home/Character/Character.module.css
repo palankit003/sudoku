@@ -1,0 +1,45 @@
+.container {
+  padding: 1rem;
+  color: white;
+}
+.nameRoleContainer {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  font-size: 2rem;
+}
+.imageDescriptionContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 1rem auto;
+    background-color: white;
+    color: black;
+    border-radius: 2rem;
+  }
+  .imageContainer {
+    width: 100%;
+  }
+  .nameRoleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .imageDescriptionContainer {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .image {
+    width: 100%;
+    border-radius: 1rem;
+  }
+}
