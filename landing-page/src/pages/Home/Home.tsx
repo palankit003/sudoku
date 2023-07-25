@@ -1,5 +1,4 @@
 import VideoConcert from "../../assets/musicConcertVideo.mp4";
-import Character from "./Character/Character";
 import Style from "./Home.module.css";
 import Alex from "../../assets/lead guitarist.png";
 import Lisa from "../../assets/Lisa.png";

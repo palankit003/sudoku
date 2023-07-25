@@ -1,5 +1,4 @@
 import Style from "./Listen.module.css";
-import im from "../../../assets/Albums/Crimson Horizon.jpg";
 interface Songs {
   name: string;
   url: string;
