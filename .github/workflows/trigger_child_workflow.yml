@@ -1,0 +1,24 @@
+# .github/workflows/trigger_child_workflow.yml
+name: Trigger Child Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger_child_workflow:
+    name: Trigger Child Workflow
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Child Workflow
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PAT }}  # Personal Access Token (PAT) with repo scope
+          repository: your-username/your-repo
+          event-type: trigger-child-workflow
+          client-payload: |
+            {
+              "folder": "child-folder-1"
+            }
