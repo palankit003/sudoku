@@ -20,7 +20,7 @@ const Home = () => {
         <div className={Style.overlayVideo}>
           <div>
             <div className={Style.slogan}>
-              Let's Join The <span>Biggest Concert</span>
+              Let's Join The <span>Biggest Concert of</span>
             </div>
             <div className={Style.btnContainer}>
               <button className={Style.bookBtn}>Book Tickets</button>
