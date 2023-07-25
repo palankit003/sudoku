@@ -13,12 +13,16 @@ jobs:
 
     steps:
       - name: Trigger Child Workflow
-        uses: peter-evans/repository-dispatch@v1
-        with:
-          token: ${{ secrets.PAT }}  # Personal Access Token (PAT) with repo scope
-          repository: your-username/your-repo
-          event-type: trigger-child-workflow
-          client-payload: |
-            {
-              "folder": "child-folder-1"
-            }
+        run: |
+          curl -X POST \
+            -H "Authorization: Bearer ${{ secrets.PAT }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "event_type": "trigger-child-workflow",
+              "client_payload": {
+                "folder": "landing-page"
+              }
+            }' \
+            https://api.github.com/repos/palankit003/Treue-Technologies/dispatches
+        env:
+          PAT: ${{ secrets.PAT }}
