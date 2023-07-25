@@ -1,13 +1,13 @@
-name: Deploy
+# .github/workflows/child_workflow.yml
+name: Child Folder Workflow
 
 on:
-  push:
-    branches:
-      - main
+  repository_dispatch:
+    types: [trigger-child-workflow]
 
 jobs:
-  build:
-    name: Build
+  build-and-deploy:
+    name: Build and Deploy for Child Folder
     runs-on: ubuntu-latest
 
     steps:
@@ -17,30 +17,17 @@ jobs:
       - name: Setup Node with pnpm
         uses: actions/setup-node@v2
         with:
-          node-version: 16
+          node-version: 18
           package-manager: pnpm
 
       - name: Install dependencies with pnpm
-        uses: pnpm install
+        run: pnpm install
 
       - name: Build project with pnpm
         run: pnpm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
-        with:
-          name: production-files
-          path: ./dist
-
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v2
         with:
           name: production-files
           path: ./dist
