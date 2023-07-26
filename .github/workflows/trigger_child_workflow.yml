@@ -11,4 +11,4 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./landing-page
+        working-directory: ./landing-page/
