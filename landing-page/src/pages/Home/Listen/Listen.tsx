@@ -1,4 +1,16 @@
 import Style from "./Listen.module.css";
+import {
+  CrimsonHorizon,
+  EchoesOfInfinity,
+  EclipseOfSouls,
+  ElectricStorm,
+  FiresOfEuphoria,
+  MidnightReverie,
+  RhythmOftheStars,
+  SerenadeOfShadows,
+  WhispersInTheWind,
+  WildfireDreams,
+} from "./images.ts";
 interface Songs {
   name: string;
   url: string;
@@ -6,43 +18,43 @@ interface Songs {
 const Albums: Songs[] = [
   {
     name: "Crimson Horizon",
-    url: `src/assets/Albums/Crimson Horizon.jpg`,
+    url: CrimsonHorizon,
   },
   {
     name: "Echoes of Infinity",
-    url: "src/assets/Albums/Echoes of Infinity.jpg",
+    url: EchoesOfInfinity,
   },
   {
     name: "Eclipse of Souls",
-    url: "src/assets/Albums/Eclipse of Souls.jpg",
+    url: EclipseOfSouls,
   },
   {
     name: "Electric Storm",
-    url: "src/assets/Albums/Electric Storm.jpg",
+    url: ElectricStorm,
   },
   {
     name: "Fires of Euphoria",
-    url: "src/assets/Albums/Fires of Euphoria.jpg",
+    url: FiresOfEuphoria,
   },
   {
     name: "Midnight Revieries",
-    url: "src/assets/Albums/Midnight Revieries.jpg",
+    url: MidnightReverie,
   },
   {
     name: "Rhythm of the Stars",
-    url: "src/assets/Albums/Rhythm of the Stars.jpg",
+    url: RhythmOftheStars,
   },
   {
     name: "Serenade of Shadows",
-    url: "src/assets/Albums/Serenade of Shadows.jpg",
+    url: SerenadeOfShadows,
   },
   {
     name: "Whispers in the Wind",
-    url: "src/assets/Albums/Whispers in the Wind.jpg",
+    url: WhispersInTheWind,
   },
   {
     name: "Wildfire Dreams",
-    url: "src/assets/Albums/Wildfire Dreams.jpg",
+    url: WildfireDreams,
   },
 ];
 const Listen = () => {
