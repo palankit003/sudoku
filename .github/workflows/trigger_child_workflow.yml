@@ -9,13 +9,6 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      # You can add any other steps you need in the main workflow here.
-
-      - name: Trigger Sub-Directory Workflow
-        uses: ./.github/workflows # Path to the directory containing your sub-directory workflow
-        with:
-          workflow: deploy.yml # Name of the sub-directory workflow
+    defaults:
+      run:
+        working-directory: ./landing-page
