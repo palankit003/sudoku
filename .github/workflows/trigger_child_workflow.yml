@@ -1,28 +1,21 @@
-# .github/workflows/trigger_child_workflow.yml
-name: Trigger Child Workflow
+name: Main Workflow
 
 on:
   push:
     branches:
-      - main
+      - main # Adjust the branch name as needed
 
 jobs:
-  trigger_child_workflow:
-    name: Trigger Child Workflow
+  build_and_deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Trigger Child Workflow
-        run: |
-          curl -X POST \
-            -H "Authorization: Bearer ${{ secrets.PAT }}" \
-            -H "Content-Type: application/json" \
-            -d '{
-              "event_type": "trigger-child-workflow",
-              "client_payload": {
-                "folder": "landing-page"
-              }
-            }' \
-            https://api.github.com/repos/palankit003/Treue-Technologies/dispatches
-        env:
-          PAT: ${{ secrets.PAT }}
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # You can add any other steps you need in the main workflow here.
+
+      - name: Trigger Sub-Directory Workflow
+        uses: ./.github/workflows # Path to the directory containing your sub-directory workflow
+        with:
+          workflow: deploy.yml # Name of the sub-directory workflow
