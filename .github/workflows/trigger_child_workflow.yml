@@ -16,6 +16,6 @@ jobs:
       # You can add any other steps you need in the main workflow here.
 
       - name: Trigger Sub-Directory Workflow
-        uses: ./.github/workflows # Path to the directory containing your sub-directory workflow
+        uses: ./landing-page/.github/workflows # Path to the directory containing your sub-directory workflow
         with:
           workflow: deploy.yml # Name of the sub-directory workflow
