@@ -1,0 +1,14 @@
+.characterContainer {
+  display: grid;
+}
+.title {
+  padding-top: 10rem;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .characterContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
