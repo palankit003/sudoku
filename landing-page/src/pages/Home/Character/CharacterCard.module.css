@@ -5,6 +5,9 @@
   color: white;
   align-items: center;
 }
+.container:hover .name {
+  color: orangered;
+}
 .name {
   font-size: 1.1rem;
 }
