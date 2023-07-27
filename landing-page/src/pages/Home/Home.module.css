@@ -75,6 +75,7 @@
 }
 .members {
   color: white;
+  border: 1px solid orangered;
   font-size: 2rem;
   font-family: "Anton", sans-serif;
   box-shadow: 0.2rem 0.2rem 0px orangered;

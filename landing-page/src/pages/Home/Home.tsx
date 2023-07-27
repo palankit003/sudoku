@@ -1,5 +1,9 @@
 import VideoConcert from "../../assets/musicConcertVideo.mp4";
 import Style from "./Home.module.css";
+import CharacterCard from "./Character/CharacterCard";
+import Listen from "./Listen/Listen";
+import Footer from "../../componets/Footer/Footer";
+
 import Alex from "../../assets/lead guitarist.png";
 import Lisa from "../../assets/Lisa.png";
 import Max from "../../assets/Bass Guitarist.png";
@@ -7,9 +11,7 @@ import Sarah from "../../assets/Sarah-Keyboardist.jpg";
 import Jake from "../../assets/drummer.jpg";
 import Michelle from "../../assets/lead vocalist.jpg";
 import Evan from "../../assets/multi-instrumentalist 2.jpg";
-import CharacterCard from "./Character/CharacterCard";
-import Listen from "./Listen/Listen";
-import Footer from "../../componets/Footer/Footer";
+
 const Home = () => {
   return (
     <>

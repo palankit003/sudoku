@@ -16,17 +16,17 @@
   color: orangered;
 }
 .formContainer {
-  padding: 0.5rem;
   color: white;
   display: flex;
   flex-direction: column;
+  margin: 4rem 1rem 0 1rem;
 }
 .formContainer input {
   padding: 1rem;
   outline: none;
 }
 .btnContainer {
-  margin: 1rem;
+  margin: 2rem 0;
 }
 .btn {
   padding: 1rem;
@@ -45,10 +45,16 @@
 }
 .signUp {
   color: white;
+  border: 1px solid orangered;
   font-size: 2rem;
   font-family: "Anton", sans-serif;
   box-shadow: 0.2rem 0.2rem 0px orangered;
-  margin: 2rem 0.5rem;
+  margin: 2rem 0;
   padding: 0 2rem;
   width: fit-content;
+}
+@media screen and (min-width: 1024px) {
+  .formContainer {
+    margin-left: 2rem;
+  }
 }
