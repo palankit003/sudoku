@@ -1,5 +1,6 @@
 .container {
   padding: 0 0.5rem;
+  user-select: none;
 }
 .listen {
   color: white;

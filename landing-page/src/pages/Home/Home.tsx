@@ -2,7 +2,6 @@ import VideoConcert from "../../assets/musicConcertVideo.mp4";
 import Style from "./Home.module.css";
 import CharacterCard from "./Character/CharacterCard";
 import Listen from "./Listen/Listen";
-import Footer from "../../componets/Footer/Footer";
 
 import Alex from "../../assets/lead guitarist.png";
 import Lisa from "../../assets/Lisa.png";
@@ -58,9 +57,6 @@ const Home = () => {
           role="Multi-Instrumentalist"
         />
       </div>
-      <footer>
-        <Footer />
-      </footer>
     </>
   );
 };

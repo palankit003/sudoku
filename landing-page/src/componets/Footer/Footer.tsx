@@ -4,12 +4,13 @@ const Footer = () => {
     <>
       <div className={Style.formContainer}>
         <p className={Style.signUp}>Sign Up for News</p>
-        <div>
-          <input placeholder="email" type="email" />
-        </div>
-
-        <div className={Style.btnContainer}>
-          <button className={Style.btn}>Receive Updates</button>
+        <div className={Style.emailBtnContainer}>
+          <div>
+            <input placeholder="Enter Email" type="email" />
+          </div>
+          <div className={Style.btnContainer}>
+            <button className={Style.btn}>Receive Updates</button>
+          </div>
         </div>
       </div>
 

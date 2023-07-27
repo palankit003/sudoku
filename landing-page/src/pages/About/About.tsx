@@ -11,7 +11,6 @@ import Evan from "../../assets/multi-instrumentalist 2.jpg";
 const About = () => {
   return (
     <div className={Style.container}>
-      <p className={Style.title}>About</p>
       <div className={Style.characterContainer}>
         <Character
           imageUrl={Alex}
@@ -63,6 +62,42 @@ const About = () => {
           role="Drummer"
         />
       </div>
+      <p className={Style.title}>About 7ROCK7</p>
+      <p>
+        Welcome to the electrifying world of 7ROCK7 – where musical passion
+        meets boundless creativity. Formed with a shared vision to conquer
+        hearts and minds through the power of rock music, 7ROCK7 is a dynamic
+        and soul-stirring band that knows no limits. From the first chord to the
+        final note, we aim to ignite a fire within the hearts of our listeners,
+        leaving them captivated by our sonic journey.
+      </p>
+      <p className={Style.title}>Our Musical Odyssey</p>
+      <p>
+        7ROCK7's journey began as a humble dream shared among friends – a dream
+        to create music that defies conventions and speaks to the depths of the
+        human experience. Each member brings a unique set of skills and
+        personalities, culminating in a symphony of artistry that sets our sound
+        apart. With a fusion of thunderous riffs, celestial melodies, and
+        heartfelt lyrics, we forge a path through uncharted musical territories.
+      </p>
+      <p className={Style.title}>The Essence of 7ROCK7</p>
+      <p>
+        At the core of our music lies a profound love for storytelling. We
+        believe that every song has a tale to tell, an emotion to convey, and a
+        connection to forge. Our music transcends mere entertainment; it seeks
+        to become a companion in life's journey – uplifting, consoling, and
+        inspiring. Through our music, we paint vivid landscapes of imagination,
+        where each listener finds solace or celebration.
+      </p>
+      <p className={Style.title}>The Live Experience</p>
+      <p>
+        A 7ROCK7 live performance is an unforgettable spectacle. We pour our
+        hearts and souls into every show, aiming to establish an intimate
+        connection with our audience. The stage comes alive with our unbridled
+        energy, and the crowd becomes an integral part of the performance. We
+        believe that music is a powerful unifier, and together, we create an
+        atmosphere of shared euphoria.
+      </p>
     </div>
   );
 };

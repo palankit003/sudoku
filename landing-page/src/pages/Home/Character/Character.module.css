@@ -1,13 +1,16 @@
 .container {
-  padding: 1rem;
+  padding: 1rem 0;
   color: white;
 }
+
 .nameRoleContainer {
   display: flex;
   flex-direction: column;
 }
 .name {
+  color: orangered;
   font-size: 2rem;
+  font-family: "Anton", sans-serif;
 }
 .imageDescriptionContainer {
   width: 100%;
@@ -15,14 +18,24 @@
   flex-direction: column;
 }
 .image {
-  height: 16rem;
-  width: auto;
-  margin: 1rem;
+  height: auto;
+  width: 100%;
+  padding: 1rem 0;
+}
+.role {
+  border-bottom: 2px solid orangered;
 }
 @media screen and (min-width: 1024px) {
+  .image {
+    height: 16rem;
+    width: auto;
+    margin: 1rem;
+    padding: 0;
+  }
   .container {
     width: 80%;
     margin: 1rem auto;
+    padding: 1rem;
     background-color: white;
     color: black;
     border-radius: 2rem;
@@ -42,6 +55,19 @@
   }
   .image {
     width: auto;
-    border-radius: 1rem;
+    border-radius: 1rem 0;
+  }
+  .role {
+    border: none;
+  }
+  .name {
+    color: black;
+    padding: 1rem;
+  }
+  .container:hover .role {
+    border-bottom: 2px solid orangered;
+  }
+  .container:hover .name {
+    color: orangered;
   }
 }

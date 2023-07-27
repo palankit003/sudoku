@@ -57,4 +57,12 @@
   .formContainer {
     margin-left: 2rem;
   }
+  .emailBtnContainer {
+    display: flex;
+    height: 1rem;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
 }

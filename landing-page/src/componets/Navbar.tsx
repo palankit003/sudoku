@@ -7,11 +7,13 @@ const Navbar = () => {
   return (
     <nav className={Style.navContainer}>
       {/* Logo */}
-      <div className={Style.logoContainer}>
-        <div className={Style.seven}>7</div>
-        <div className={Style.logo}>ROCK</div>
-        <div className={Style.seven}>7</div>
-      </div>
+      <Link to="/" style={{ color: "black", textDecoration: "none" }}>
+        <div className={Style.logoContainer}>
+          <div className={Style.seven}>7</div>
+          <div className={Style.logo}>ROCK</div>
+          <div className={Style.seven}>7</div>
+        </div>
+      </Link>
       <div>
         <div className={Style.navMobile}>
           <div
