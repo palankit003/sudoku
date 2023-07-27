@@ -6,7 +6,7 @@ on:
       - main
 defaults:
   run:
-    working-directory: dart_project
+    working-directory: landing-page
 jobs:
   build:
     name: Build
