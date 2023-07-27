@@ -59,7 +59,7 @@ const Albums: Songs[] = [
 ];
 const Listen = () => {
   return (
-    <div>
+    <div className={Style.container}>
       <div className={Style.listen}>Listen</div>
       <div className={Style.albumContainer}>
         {Albums.map((e) => {

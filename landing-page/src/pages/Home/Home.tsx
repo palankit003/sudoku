@@ -9,6 +9,7 @@ import Michelle from "../../assets/lead vocalist.jpg";
 import Evan from "../../assets/multi-instrumentalist 2.jpg";
 import CharacterCard from "./Character/CharacterCard";
 import Listen from "./Listen/Listen";
+import Footer from "../../componets/Footer/Footer";
 const Home = () => {
   return (
     <>
@@ -29,6 +30,7 @@ const Home = () => {
         </div>
       </div>
       <Listen />
+      <div className={Style.members}>Members</div>
       <div className={Style.characterCardContainer}>
         <CharacterCard
           image={Alex}
@@ -54,6 +56,9 @@ const Home = () => {
           role="Multi-Instrumentalist"
         />
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

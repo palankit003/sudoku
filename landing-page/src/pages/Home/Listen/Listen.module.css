@@ -1,11 +1,24 @@
+.container {
+  padding: 0 0.5rem;
+}
+.listen {
+  color: white;
+  font-size: 2rem;
+  font-family: "Anton", sans-serif;
+  box-shadow: 0.2rem 0.2rem 0px orangered;
+  margin: 2rem 0;
+  padding: 0 2rem;
+  width: fit-content;
+}
 .coverContainer {
   width: 10rem;
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: black;
+  background-color: orangered;
   cursor: pointer;
   overflow: hidden;
+  border-radius: 1rem;
   -webkit-tap-highlight-color: transparent;
 }
 .coverContainer:hover .name {
@@ -14,11 +27,10 @@
 
 .image {
   width: 100%;
-  border-radius: 1rem;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .image:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .name {
   position: absolute;
@@ -42,17 +54,18 @@
 .albumContainer {
   width: 80%;
   display: grid;
-  gap: 0.5rem;
+  gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
   margin: auto;
 }
-.listen {
-  color: white;
-  font-size: 2rem;
-}
+
 @media screen and (min-width: 1024px) {
   .albumContainer {
     grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+  .container {
+    padding: 0 2rem;
   }
 }
