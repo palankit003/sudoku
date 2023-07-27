@@ -24,16 +24,16 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
       - name: Install dependencies
-        run: cd landingPage && pnpm install
+        run: cd landing-page && pnpm install
 
       - name: Build project
-        run: cd landingPage && pnpm run build
+        run: cd landing-page && pnpm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
           name: production-files
-          path: landingPage/dist
+          path: landing-page/dist
 
   deploy:
     name: Deploy
@@ -46,10 +46,10 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: production-files
-          path: landingPage/dist
+          path: landing-page/dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: landingPage/dist
+          publish_dir: landing-page/dist
