@@ -8,7 +8,7 @@
   z-index: 999;
 }
 .wrapper {
-  position: absolute;
+  position: fixed;
   justify-content: center;
   align-items: center;
   display: flex;
