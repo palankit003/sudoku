@@ -62,6 +62,7 @@ const About = () => {
           role="Drummer"
         />
       </div>
+      <div className={Style.line}></div>
       <p className={Style.title}>About 7ROCK7</p>
       <p>
         Welcome to the electrifying world of 7ROCK7 – where musical passion

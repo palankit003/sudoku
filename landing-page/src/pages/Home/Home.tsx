@@ -10,8 +10,14 @@ import Sarah from "../../assets/Sarah-Keyboardist.jpg";
 import Jake from "../../assets/drummer.jpg";
 import Michelle from "../../assets/lead vocalist.jpg";
 import Evan from "../../assets/multi-instrumentalist 2.jpg";
+import { useState } from "react";
+import Modal from "../../componets/modal/Modal";
 
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const closeModal = () => {
+    setIsOpen(false);
+  };
   return (
     <>
       {/* <img src={Concert} className={Style.concertImage}></img> */}
@@ -25,7 +31,10 @@ const Home = () => {
               Let's Join The <span>Biggest Concert</span>
             </div>
             <div className={Style.btnContainer}>
-              <button className={Style.bookBtn}>Book Tickets</button>
+              {isOpen && <Modal closeModal={closeModal} />}
+              <button className={Style.bookBtn} onClick={() => setIsOpen(true)}>
+                Book Tickets
+              </button>
             </div>
           </div>
         </div>

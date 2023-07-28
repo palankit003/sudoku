@@ -1,15 +1,34 @@
+import { useState } from "react";
 import Style from "./Footer.module.css";
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const receiveEmail = () => {
+    if (email == "") {
+      alert("Fill email");
+    } else {
+      alert(`${email} will receive updates`);
+      setEmail("");
+    }
+  };
   return (
     <>
       <div className={Style.formContainer}>
         <p className={Style.signUp}>Sign Up for News</p>
         <div className={Style.emailBtnContainer}>
           <div>
-            <input placeholder="Enter Email" type="email" />
+            <input
+              placeholder="Enter Email"
+              type="email"
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+              value={email}
+            />
           </div>
           <div className={Style.btnContainer}>
-            <button className={Style.btn}>Receive Updates</button>
+            <button className={Style.btn} onClick={() => receiveEmail()}>
+              Receive Updates
+            </button>
           </div>
         </div>
       </div>

@@ -87,9 +87,7 @@
   .overlayVideo > div {
     margin: 2rem;
   }
-  .overlayVideo > div:hover {
-    transform: translate(0, 1rem);
-  }
+
   .btnContainer {
     display: flex;
     justify-content: center;
@@ -98,9 +96,7 @@
     margin-top: 3rem;
     transition: transform 0.5s;
   }
-  .bookBtn:hover {
-    transform: translate(0, -1rem);
-  }
+
   .characterCardContainer {
     padding: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;

@@ -74,10 +74,10 @@ const Navbar = () => {
           )}
         </div>
         <div className={Style.navLinksContainer}>
-          <NavLink link="Home" />
-          <NavLink link="About" />
-          <NavLink link="Contact" />
-          <NavLink link="Upcoming Concert" />
+          <NavLink link="Home" title="Home" />
+          <NavLink link="about" title="About" />
+          <NavLink link="contact" title="Contact" />
+          <NavLink link="concert" title="Upcoming Concert" />
         </div>
       </div>
     </nav>
