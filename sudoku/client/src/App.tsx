@@ -2,7 +2,7 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Game from "./pages/Game/Game";
-import Home from "./pages/Home/Home";
+// import Home from "./pages/Home/Home";
 
 function App() {
   return (

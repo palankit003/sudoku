@@ -1,6 +1,13 @@
 .container {
   font-size: 2rem;
-  background-color: #00bfff;
   color: white;
   padding: 1rem;
+  /* Ocean Theme */
+  /* background-color: #4d88ff; */
+  /* Nature Theme */
+  /* background-color: #99cc99; */
+  /* Space Theme */
+  /* background-color: #000066; */
+  /* Candy Land */
+  background-color: #ff99cc;
 }
