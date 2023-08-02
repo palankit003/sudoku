@@ -1,13 +1,33 @@
+[data-theme="space-theme"] {
+  /* Space Theme */
+  --bgColor: #000066;
+}
+[data-theme="candy-land"] {
+  /* Candy Land */
+  --bgColor: #ff99cc;
+}
+[data-theme="nature-theme"] {
+  /* Nature Theme */
+  --bgColor: #99cc99;
+}
+[data-theme="ocean-theme"] {
+  /* Ocean Theme */
+  --bgColor: #4d88ff;
+}
 .container {
-  font-size: 2rem;
   color: white;
   padding: 1rem;
-  /* Ocean Theme */
-  /* background-color: #4d88ff; */
-  /* Nature Theme */
-  /* background-color: #99cc99; */
-  /* Space Theme */
-  /* background-color: #000066; */
-  /* Candy Land */
-  background-color: #ff99cc;
+
+  background-color: var(--bgColor);
+}
+.logo {
+  font-size: 2rem;
+}
+.linkContainer > ul {
+  list-style: none;
+  display: flex;
+}
+.linkContainer > ul > li {
+  padding: 1rem;
+  cursor: pointer;
 }

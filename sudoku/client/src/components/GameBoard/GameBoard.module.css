@@ -1,13 +1,16 @@
 :root {
   --cellSize: 2.5rem;
+}
+[data-theme="ocean-theme"] {
   /* Ocean Theme */
-  /* --thickBorder: #000066;
+  --thickBorder: #000066;
   --thinBorder: #00bfff;
   --occupiedCellColor: #fff;
   --emptyCellColor: #b3d1ff;
   --highlightedCellColor: #00e6e6aa;
-  --selectedCellColor: #80c1ffaa; */
-
+  --selectedCellColor: #80c1ffaa;
+}
+[data-theme="nature-theme"] {
   /* Nature Theme */
   --bodyBgColor: #003300;
   --navBgColor: #99cc99;
@@ -17,17 +20,8 @@
   --emptyCellColor: #ccffcc;
   --highlightedCellColor: #00cc00aa;
   --selectedCellColor: #b3d9ffaa;
-
-  /* Space Theme */
-  --bodyBgColor: #000000;
-  --navBgColor: #000066;
-  --thickBorder: #330033;
-  --thinBorder: #c0c0c0;
-  --occupiedCellColor: #f0f0f0;
-  --emptyCellColor: #333333;
-  --highlightedCellColor: #800080aa;
-  --selectedCellColor: #0000ffaa;
-
+}
+[data-theme="candy-land"] {
   /* Candy land */
   --bodyBgColor: #ffb3d1;
   --navBgColor: #ff99cc;
@@ -38,13 +32,24 @@
   --highlightedCellColor: #e6e6faaa;
   --selectedCellColor: #ff6b6baa;
 }
+[data-theme="space-theme"] {
+  /* Space Theme */
+  --bodyBgColor: #000000;
+  --navBgColor: #000066;
+  --thickBorder: #330033;
+  --thinBorder: #c0c0c0;
+  --occupiedCellColor: #f0f0f0;
+  --emptyCellColor: #333333;
+  --highlightedCellColor: #800080aa;
+  --selectedCellColor: #0000ffaa;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
   width: fit-content;
   align-items: center;
   margin: auto;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 .levelClockContainer {
   display: flex;
@@ -178,6 +183,7 @@
   padding: 1rem;
   border: 2px solid white;
   background-color: var(--navBgColor);
+  cursor: pointer;
 }
 .btnContainer > button:active {
   background-color: black;
