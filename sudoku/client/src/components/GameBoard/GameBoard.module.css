@@ -3,6 +3,7 @@
 }
 [data-theme="ocean-theme"] {
   /* Ocean Theme */
+  --navBgColor: #4d88ff;
   --thickBorder: #000066;
   --thinBorder: #00bfff;
   --occupiedCellColor: #fff;
